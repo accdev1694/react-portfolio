@@ -1,7 +1,12 @@
 import { useState } from "react";
+import AboutMe from "./components/AboutMe";
 
 function App() {
-  return <></>;
+  return (
+    <div className="main-container">
+      <AboutMe />
+    </div>
+  );
 }
 
 export default App;
