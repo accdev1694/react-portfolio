@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <div className="about-me">
       <div className="left-intro">
-        <h1 className="name">Oloche Aboje</h1>
+        <h1 className="main-section-heading">Oloche Aboje</h1>
         <h2 className="career">FRONT END DEVELOPER</h2>
         <p className="introduction">
           I started out in architecture, drawn to design and structure — but

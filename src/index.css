@@ -52,7 +52,7 @@ body {
   padding-top: none;
 }
 
-h1.name {
+h1.main-section-heading {
   margin-bottom: var(--spacing-xxl);
   font-size: 3.5rem;
 }
