@@ -13,7 +13,7 @@ const AboutMe = () => {
           focused, creative, and at home. I can’t imagine doing anything else,
           and that passion drives everything I build.
         </p>
-        <button className="learn-more">Learn more about me</button>
+        <button className="learn-more">Find out more</button>
       </div>
       <div className="right-intro">
         <img className="my-photo" src={myPhoto} alt="my passport photograph" />

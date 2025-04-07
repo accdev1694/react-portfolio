@@ -2,6 +2,13 @@
   --primary-color: rgb(152, 177, 152);
   --secondary-color: rgb(24, 42, 35);
   --accent-color: rgb(106, 38, 4);
+  --spacing-xs: 4px;
+  --spacing-sm: 7px;
+  --spacing-md: 10px;
+  --spacing-lg: 14px;
+  --spacing-xl: 17px;
+  --spacing-xxl: 20px;
+  --spacing-xxxl: 50px;
 }
 
 * {
@@ -30,18 +37,7 @@ body {
   width: 70%;
   margin: 0 auto;
 }
-.career {
-  color: var(--accent-color);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: bold;
-  /* margin-top: 5px; */
-  font-size: 1.2em;
-  border-top: 1px solid var(--secondary-color);
-  border-bottom: 1px solid var(--secondary-color);
-  display: inline-block;
-  padding-top: 5px 0 5px 0;
-  letter-spacing: 3px;
-}
+
 
 .about-me {
   display: flex;
@@ -51,19 +47,30 @@ body {
 }
 
 .left-intro {
-  /* font-size: 2rem; */
   width: 60%;
-  padding-right: 50px;
+  padding-right: var(--spacing-xxxl);
+  padding-top: none;
 }
 
 h1.name {
-  margin-bottom: 20px;
-  font-size: 3rem;
+  margin-bottom: var(--spacing-xxl);
+  font-size: 3.5rem;
+}
+.career {
+  color: var(--accent-color);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1em;
+  font-weight: bolder;
+  border-top: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  display: inline-block;
+  padding: var(--spacing-xs) 0 var(--spacing-xs) 0;
+  letter-spacing: 7.7px;
 }
 
 .introduction {
   font-family: sans-serif;
-  margin-top: 20px;
+  margin-top: var(--spacing-xxl);
   color: grey;
   font-size: 1rem;
   line-height: 25px;
@@ -71,8 +78,7 @@ h1.name {
 }
 
 .learn-more {
-  padding: 10px 100px;
-  /* width: 100%; */
+  padding: var(--spacing-md) 115px;
   font-size: 1em;
   margin-top: 20px;
   background: var(--accent-color);
@@ -88,11 +94,11 @@ h1.name {
   /* border: 10px solid var(--secondary-color); */
   background-color: var(--secondary-color);
   width: fit-content;
-  padding: 5px;
+  padding: var(--spacing-xs);
 }
 
-.my-photo {
-  width: 300px;
+img.my-photo {
+  width: 230px;
   vertical-align: middle;
   border-radius: 10px;
 }
