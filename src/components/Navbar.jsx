@@ -8,9 +8,10 @@ const Navbar = () => {
         oloche<span className="a-colorchange">a</span>boje
       </Link>
       <div className="navlinks">
-        <Link to="./my-skills">my Skills</Link>
-        <Link to="./my-projects">my Projects</Link>
-        <Link to="./contact-me">contact Me</Link>
+        <Link to="./">homePage</Link>
+        <Link to="./my-skills">mySkills</Link>
+        <Link to="./my-projects">myProjects</Link>
+        <Link to="./contact-me">contactMe</Link>
       </div>
       </div>
       

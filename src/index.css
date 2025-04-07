@@ -1,10 +1,9 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 :root {
   --primary-color: rgb(152, 177, 152);
   --secondary-color: rgb(24, 42, 35);
-  --accent-color: rgb(173, 59, 2);
+  --accent-color: rgb(186, 62, 0);
   --spacing-xs: 4px;
   --spacing-sm: 7px;
   --spacing-md: 10px;
@@ -21,8 +20,8 @@
 }
 
 body {
-  font-family:  Ubuntu, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Ubuntu, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: linear-gradient(
     var(--secondary-color),
     black,
@@ -46,11 +45,16 @@ div.navbar {
 div.contents {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .contents a {
   text-decoration: none;
   color: grey;
+  border-bottom: 2px solid transparent;
+  padding: var(--spacing-xs) 0 var(--spacing-xs) 0;
+  margin-bottom: 0;
+  transition: all ease-in-out 0.3s;
 }
 
 .contents .navlinks a {
@@ -61,11 +65,16 @@ div.contents {
   letter-spacing: 2px;
 }
 
-span.a-colorchange{
+a:hover {
+  border-bottom: 2px solid var(--accent-color);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+span.a-colorchange {
   color: var(--accent-color);
 }
 
-.logo{
+.logo {
   font-weight: 900;
   font-size: large;
 }
@@ -119,10 +128,18 @@ h1.main-section-heading {
   font-size: 1em;
   margin-top: 20px;
   background: var(--accent-color);
-  color: var(--primary-color);
+  color: rgb(204, 204, 204);
   border: 1px solid var(--accent-color);
   font-weight: 900;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.learn-more:hover {
+  color: white;
+  box-shadow: 0 0 7px orangered;
+  transition: all ease-in-out 0.2s;
+  border: 1px solid orangered;
 }
 
 .right-intro {
