@@ -1,7 +1,10 @@
 const MySkills = () => {
-    return ( <div className="my-skills">
-        <h1>My Skills</h1>
-    </div> );
-}
- 
+  return (
+    <div className="hero">
+      <div className="left-hero"></div>
+      <div className="right-hero"></div>
+    </div>
+  );
+};
+
 export default MySkills;

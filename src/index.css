@@ -19,7 +19,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: Ubuntu, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: linear-gradient(
@@ -36,16 +37,15 @@ html, body {
   overflow: hidden;
 }
 
-#root{
+#root {
   height: 100%;
   /* overflow-y: hidden; */
-
 }
 
 /* --------> navigation */
 
 div.navbar {
-  padding: var(--spacing-xl) 0 var(--spacing-xl) 0;
+  padding: var(--spacing-sm) 0 var(--spacing-sm) 0;
   background-color: var(--secondary-color);
   border-bottom: 1px solid rgba(255, 68, 0, 0.175);
 }
@@ -74,7 +74,7 @@ div.contents {
 }
 
 a:hover {
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -89,14 +89,14 @@ span.a-colorchange {
 
 /* --------> main */
 .main-container {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   height: calc(100% - 64.4px);
   display: flex;
   align-items: center;
 }
 
-.about-me {
+.hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -113,7 +113,7 @@ h1.main-section-heading {
   font-size: 3.5rem;
   margin-bottom: 10px;
 }
-.career {
+.hero-subheading {
   color: var(--accent-color);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1em;
@@ -125,7 +125,7 @@ h1.main-section-heading {
   letter-spacing: 7.7px;
 }
 
-.introduction {
+.description {
   font-family: sans-serif;
   margin-top: var(--spacing-xxl);
   color: grey;
@@ -134,7 +134,7 @@ h1.main-section-heading {
   letter-spacing: 2px;
 }
 
-.learn-more {
+button.learn-more {
   padding: var(--spacing-md) 115px;
   font-size: 1em;
   margin-top: 20px;
@@ -146,14 +146,14 @@ h1.main-section-heading {
   cursor: pointer;
 }
 
-.learn-more:hover {
+button.learn-more:hover {
   color: white;
   box-shadow: 0 0 7px orangered;
   transition: all ease-in-out 0.2s;
   border: 1px solid orangered;
 }
 
-.right-intro {
+.right-hero {
   background-color: var(--secondary-color);
   width: fit-content;
   padding: var(--spacing-xs);
@@ -161,7 +161,7 @@ h1.main-section-heading {
 }
 
 img.my-photo {
-  width: 230px;
+  width: 270px;
   vertical-align: middle;
   border-radius: 10px;
 }
