@@ -1,7 +1,9 @@
-const MySkills = () => {
+import LeftIntroContent from "./LeftIntroContent";
+
+const MySkills = ({ leftIntro }) => {
   return (
     <div className="hero">
-      <div className="left-hero"></div>
+      <LeftIntroContent leftIntro={leftIntro} nextPage={"/my-projects"} />
       <div className="right-hero"></div>
     </div>
   );

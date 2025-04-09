@@ -1,10 +1,10 @@
 import myPhoto from "../assets/images/my-photo.jpg";
 import LeftIntroContent from "./LeftIntroContent";
 
-const HomePage = ({ leftHero }) => {
+const HomePage = ({ leftIntro }) => {
   return (
     <div className="hero">
-      <LeftIntroContent leftHero={leftHero} page={0} nextPage={"/my-skills"} />
+      <LeftIntroContent leftIntro={leftIntro} nextPage={"/my-skills"} />
       <div className="right-intro">
         <img className="my-photo" src={myPhoto} alt="my passport photograph" />{" "}
       </div>

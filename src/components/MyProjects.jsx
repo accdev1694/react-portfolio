@@ -1,5 +1,10 @@
-const MyProjects = () => {
-    return ( <div className="my-projects"><h1>My Projects</h1></div> );
-}
- 
+import LeftIntroContent from "./LeftIntroContent";
+
+const MyProjects = ({ leftIntro }) => (
+  <div className="hero">
+    <LeftIntroContent leftIntro={leftIntro} nextPage={"/contact-me"} />
+    <div className="right-intro"></div>
+  </div>
+);
+
 export default MyProjects;

@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
-const LeftIntroContent = ({ leftHero, page, nextPage }) => {
-  const { heading, subHeading, description, learnMore } = leftHero[page].home;
+const LeftIntroContent = ({ leftIntro, nextPage }) => {
+  const { heading, subHeading, description, learnMore, id } = leftIntro;
+
   const navigate = useNavigate();
   return (
     <div className="left-intro">
