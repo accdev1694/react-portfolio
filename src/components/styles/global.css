@@ -67,4 +67,10 @@ span.color-change {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
-
+.contacts {
+  width: 30px;
+  margin-left: var(--spacing-lg);
+  padding: var(--spacing-sm);
+  background: rgba(0, 0, 0, 0.284);
+  border-radius: 10px;
+}

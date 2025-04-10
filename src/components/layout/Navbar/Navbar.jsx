@@ -1,13 +1,11 @@
 import Navlinks from "../Navlinks/Navlinks";
-import "./Navbar.css";
+import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
-import "../../styles/global.css"
-
-
+import "../../styles/global.css";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <div className={`navbar ${styles.navbar}`}>
       <Link to={"/"}>
         ol<span className="color-change">o</span>che
       </Link>
