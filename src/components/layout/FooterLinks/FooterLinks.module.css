@@ -1,0 +1,7 @@
+.contacts {
+    width: 30px;
+    margin-left: var(--spacing-lg);
+    padding: var(--spacing-xs);
+    background: rgba(255, 255, 255, 0.091);
+    border-radius: 5px;
+  }

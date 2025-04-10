@@ -9,16 +9,16 @@ import styles from "./FooterLinks.module.css"
 const FooterLinks = () => {
     return ( <div className="footer-links">
         <a href="https://github.com/accdev1694?tab=repositories" target="_blank">
-          <img className="github-img contacts" src={github} alt="" />
+          <img  src={github} alt="" className={styles.contacts}/>
         </a>
         <a href="https://www.linkedin.com/in/ao111/" target="_blank">
-            <img src={linkedin} alt="" className="linkedin-img contacts"/>
+            <img src={linkedin} alt="" className={styles.contacts}/>
         </a>
         <a href="https://abojeonline.com/" target="_blank">
-            <img src={hashnode} alt="" className="hashnode-img contacts" />
+            <img src={hashnode} alt=""  className={styles.contacts}/>
         </a>
         <a href="mailto:diloch111@gmail.com" target="_blank">
-            <img src={mail} alt="" className="mail-img contacts" />
+            <img src={mail} alt="" className={styles.contacts} />
         </a>
       </div> );
 }
