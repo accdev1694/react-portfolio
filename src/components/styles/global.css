@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --primary-color: rgb(152, 177, 152);
+  --secondary-color: rgb(24, 42, 35);
+  --accent-color: rgb(186, 62, 0);
+  --accent-color-faded: rgba(255, 68, 0, 0.175);
+  --spacing-xs: 4px;
+  --spacing-sm: 7px;
+  --spacing-md: 10px;
+  --spacing-lg: 14px;
+  --spacing-xl: 17px;
+  --spacing-xxl: 20px;
+  --spacing-xxxl: 50px;
+  --smooth-transition: ease-in-out 0.3s all;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid white; */
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Ubuntu, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: linear-gradient(
+    var(--secondary-color),
+    black,
+    var(--secondary-color),
+    black
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100%; */
+  color: var(--primary-color);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+span.color-change {
+  color: var(--accent-color);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: 5px;
+  transition: var(--smooth-transition);
+}
+.navbar a:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.294);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+
