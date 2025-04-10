@@ -1,10 +1,9 @@
-import LeftIntroContent from "./LeftIntroContent";
+import DataContent from "./DataContent";
 
-const PageNotFound = ({ leftIntro }) => {
+const PageNotFound = ({ data }) => {
   return (
     <div className="hero">
-      <LeftIntroContent leftIntro={leftIntro} nextPage={"/"} />
-      <div className="right-hero"></div>
+      <DataContent data={data} nextPage={"/"} imageSize="images-lg"/>      
     </div>
   );
 };

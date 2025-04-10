@@ -1,10 +1,5 @@
-import LeftIntroContent from "./LeftIntroContent";
+import DataContent from "./DataContent";
 
-const ContactMe = ({ leftIntro }) => (
-  <div className="hero">
-    <LeftIntroContent leftIntro={leftIntro} nextPage={"/"} />
-    <div className="right-intro"></div>
-  </div>
-);
+const ContactMe = ({ data }) => <DataContent data={data} nextPage={"/"} imageSize="images-sm"/>;
 
 export default ContactMe;

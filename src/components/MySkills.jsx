@@ -1,11 +1,8 @@
-import LeftIntroContent from "./LeftIntroContent";
+import DataContent from "./DataContent";
 
-const MySkills = ({ leftIntro }) => {
+const MySkills = ({ data }) => {
   return (
-    <div className="hero">
-      <LeftIntroContent leftIntro={leftIntro} nextPage={"/my-projects"} />
-      <div className="right-hero"></div>
-    </div>
+    <DataContent data={data} nextPage={"/my-projects"} imageSize="images-sm" />
   );
 };
 

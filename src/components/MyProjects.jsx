@@ -1,10 +1,7 @@
-import LeftIntroContent from "./LeftIntroContent";
+import DataContent from "./DataContent";
 
-const MyProjects = ({ leftIntro }) => (
-  <div className="hero">
-    <LeftIntroContent leftIntro={leftIntro} nextPage={"/contact-me"} />
-    <div className="right-intro"></div>
-  </div>
+const MyProjects = ({ data }) => (
+  <DataContent data={data} nextPage={"/contact-me"} imageSize="images-sm"/>
 );
 
 export default MyProjects;
