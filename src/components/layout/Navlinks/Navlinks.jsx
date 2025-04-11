@@ -7,7 +7,7 @@ const Navlinks = () => {
             <Link to={"/"}>homePage</Link>
             <Link to={"/skills"}>mySkills</Link>
             <Link to={"/projects"}>myProjects</Link>
-            <Link to={"/contact"}>contactMe</Link>
+            <Link to={"/contacts"}>contactMe</Link>
         </div>
      );
 }

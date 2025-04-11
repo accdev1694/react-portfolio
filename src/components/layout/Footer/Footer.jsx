@@ -9,7 +9,7 @@ const Footer = () => {
       <p>
         &copy; {new Date().getFullYear()} Oloche Aboje. All rights reserved.
       </p>
-      <FooterLinks />
+      <FooterLinks pageTitle="contacts"/>
     </div>
   );
 };

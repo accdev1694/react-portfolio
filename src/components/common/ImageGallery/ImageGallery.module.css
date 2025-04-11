@@ -1,0 +1,16 @@
+
+
+.contacts{
+    width: 150px;
+    padding: var(--spacing-xxxl);
+    background-color: rgba(136, 136, 136, 0.196);
+    border-radius: 10px;
+    opacity: 0.6;
+    transition: all ease-in-out 0.3s;
+}
+
+.contacts:hover{
+    opacity: 1;
+    padding:  var(--spacing-xxl);
+   }
+

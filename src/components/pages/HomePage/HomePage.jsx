@@ -1,8 +1,10 @@
-import PageSection from "../../common/PageSection/PageSection";
+import ContentDescription from "../../common/ContentDescription/ContentDescription";
 import styles from "./HomePage.module.css"
+import ImageGallery from "../../common/ImageGallery/ImageGallery";
 const HomePage = () => {
-    return ( <div className={styles.homePage}>
-        <PageSection />
+    return ( <div className="page-container">
+        <ContentDescription />
+        <ImageGallery pageTitle="home" />
     </div> );
 }
  
