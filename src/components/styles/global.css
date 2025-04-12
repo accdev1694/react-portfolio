@@ -5,6 +5,7 @@
   --secondary-color: rgb(24, 42, 35);
   --accent-color: rgb(186, 62, 0);
   --accent-color-faded: rgba(255, 68, 0, 0.175);
+  --background-color-faded: rgba(136, 136, 136, 0.196);
   --spacing-xs: 4px;
   --spacing-sm: 7px;
   --spacing-md: 10px;
@@ -19,6 +20,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 
 html,
@@ -75,13 +77,6 @@ span.color-change {
   align-items: center;
 }
 
-.image-gallery{
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  gap: 20px;
-}
 
-.image-gallery a{
-  width: 150px;
-  height: 150px;
-}
+
+

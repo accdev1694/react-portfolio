@@ -4,6 +4,7 @@ import Footer from "./components/layout/Footer/Footer";
 import "./components/styles/global.css"
 import HomePage from "./components/pages/HomePage/HomePage";
 import ContactMe from "./components/pages/ContactMe/ContactMe";
+import MyProjects from "./components/pages/MyProjects/MyProjects";
 const App = () => {
   return (
     <div className="app-container">
@@ -13,6 +14,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage />}/>          
             <Route path="/contacts" element={<ContactMe />}/>
+            <Route path="/projects" element={<MyProjects />}/>
           </Routes>
         </div>
         <Footer />

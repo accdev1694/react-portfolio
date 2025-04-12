@@ -1,16 +1,36 @@
 
 
-.contacts{
+.contacts:hover{
+    opacity: 1;
+    padding:  var(--spacing-sm);
+   }
+   
+   .multipleImages{
     width: 150px;
-    padding: var(--spacing-xxxl);
-    background-color: rgba(136, 136, 136, 0.196);
+    padding: var(--spacing-lg);
+    background-color: var(--background-color-faded);
     border-radius: 10px;
     opacity: 0.6;
     transition: all ease-in-out 0.3s;
-}
 
-.contacts:hover{
-    opacity: 1;
-    padding:  var(--spacing-xxl);
    }
+   
 
+   .imageGallery{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+  }
+  
+  .imageGallery a{
+    width: 150px;
+    height: 150px;
+  }
+  
+  .image img{
+    width: 400px;
+    background: var(--background-color-faded);
+    border-radius: 20px;
+  }
+  
+  

@@ -3,20 +3,30 @@ import { pageData } from "../../pageData";
 const ImageGallery = ({ pageTitle }) => {
   const pageDetails = pageData[pageTitle];
   return (
-    <div className="image-gallery">
-      {pageDetails.imgs.map((img, index) => (
-        <a
-          href={pageDetails.urls ? pageDetails.urls[index] : "#"}
-          key={index}
-          target="_blank"
-        >
+    <div
+      className={
+        pageTitle === "home" || pageTitle === "notFound"
+          ? styles.image
+          : styles.imageGallery
+      }
+    >
+      {pageDetails.imgs.map((img, index) =>
+        pageDetails.urls ? (
+          <a href={pageDetails.urls[index]} key={index} target="_blank">
+            <img
+              src={img}
+              alt={pageDetails.alt[index]}
+              className={styles[pageTitle] + " " + styles.multipleImages}
+            />
+          </a>
+        ) : (
           <img
             src={img}
             alt={pageDetails.alt[index]}
-            className={styles[pageTitle]}
+            className={styles[pageTitle] + " " + styles.singleImages}
           />
-        </a>
-      ))}
+        )
+      )}
     </div>
   );
 };
