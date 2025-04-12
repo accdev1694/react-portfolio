@@ -1,12 +1,12 @@
 import ContentDescription from "../../common/ContentDescription/ContentDescription";
 import ImageGallery from "../../common/ImageGallery/ImageGallery";
-import styles from "./MySkills.module.css"
+import styles from "./NotFound.module.css"
 
-const MySkills = () => {
+const NotFound = () => {
     return <div className="page-container">
-        <ContentDescription />
-        <ImageGallery pageTitle="skills" />
-    </div>
+    <ContentDescription />
+    <ImageGallery pageTitle="notFound" />
+</div>
 }
  
-export default MySkills;
+export default NotFound;

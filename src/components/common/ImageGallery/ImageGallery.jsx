@@ -16,14 +16,14 @@ const ImageGallery = ({ pageTitle }) => {
             <img
               src={img}
               alt={pageDetails.alt[index]}
-              className={styles[pageTitle] + " " + styles.multipleImages}
+              className={styles[pageTitle]}
             />
           </a>
         ) : (
           <img
             src={img}
             alt={pageDetails.alt[index]}
-            className={styles[pageTitle] + " " + styles.singleImages}
+            className={styles[pageTitle]}
           />
         )
       )}

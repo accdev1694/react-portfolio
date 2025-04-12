@@ -1,11 +1,8 @@
 
 
-.contacts:hover{
-    opacity: 1;
-    padding:  var(--spacing-sm);
-   }
+
    
-   .multipleImages{
+   div img{
     width: 150px;
     padding: var(--spacing-lg);
     background-color: var(--background-color-faded);
@@ -14,6 +11,11 @@
     transition: all ease-in-out 0.3s;
 
    }
+
+   div img:hover{
+    opacity: 1;
+    padding:  var(--spacing-sm);
+   }
    
 
    .imageGallery{
@@ -21,11 +23,13 @@
     grid-template-columns: repeat(2, 2fr);
     gap: 20px;
   }
-  
+
   .imageGallery a{
     width: 150px;
     height: 150px;
   }
+  
+ 
   
   .image img{
     width: 400px;
