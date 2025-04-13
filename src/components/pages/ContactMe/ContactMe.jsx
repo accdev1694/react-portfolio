@@ -4,7 +4,7 @@ import ImageGallery from "../../common/ImageGallery/ImageGallery";
 const ContactMe = () => {
   return (
     <div className="page-container">
-      <ContentDescription />
+      <ContentDescription pageTitle="contacts"  />
       <ImageGallery pageTitle="contacts" />
     </div>
   );

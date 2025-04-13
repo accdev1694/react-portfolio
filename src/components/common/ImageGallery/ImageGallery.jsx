@@ -1,5 +1,7 @@
 import styles from "./ImageGallery.module.css";
 import { pageData } from "../../pageData";
+
+
 const ImageGallery = ({ pageTitle }) => {
   const pageDetails = pageData[pageTitle];
   return (

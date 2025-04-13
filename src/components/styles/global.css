@@ -70,6 +70,7 @@ span.color-change {
 }
 
 .page-container {
+  /* width: 100%; */
   height: calc(100vh - 80px);
   margin: auto 200px;
   display: flex;

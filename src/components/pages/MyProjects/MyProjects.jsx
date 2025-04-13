@@ -4,7 +4,7 @@ import styles from "./MyProjects.module.css"
 
 const MyProjects = () => {
     return <div className="page-container">
-        <ContentDescription />
+        <ContentDescription  pageTitle="projects" />
         <ImageGallery pageTitle="projects" />
     </div>
 }
