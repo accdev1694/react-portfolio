@@ -5,7 +5,7 @@ import styles from "./NotFound.module.css";
 const NotFound = () => {
   return (
     <div className="page-container">
-      <ContentDescription pageTitle="notFound" />
+      <ContentDescription pageTitle="notFound" nextPage="/"/>
       <ImageGallery pageTitle="notFound" />
     </div>
   );

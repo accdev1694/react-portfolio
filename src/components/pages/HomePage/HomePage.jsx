@@ -3,7 +3,7 @@ import styles from "./HomePage.module.css"
 import ImageGallery from "../../common/ImageGallery/ImageGallery";
 const HomePage = () => {
     return ( <div className="page-container">
-        <ContentDescription pageTitle="home" />
+        <ContentDescription pageTitle="home" nextPage="/skills"/>
         <ImageGallery pageTitle="home" />
     </div> );
 }
