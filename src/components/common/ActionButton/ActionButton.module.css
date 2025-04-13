@@ -14,3 +14,12 @@
   /* box-shadow: 0 0 5px rgb(255, 255, 255); */
   color: white;
 }
+
+@media (max-width: 1261px) {
+   
+    button.actionButton{
+        font-size: 0.8em;
+  padding: var(--spacing-md) var(--spacing-xxxl);
+
+    }
+  }

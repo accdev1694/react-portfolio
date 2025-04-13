@@ -1,9 +1,14 @@
 .pageContainer {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
     margin: auto 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: var(--spacing-xxxl);
   }
+
+  
+
+
+  
 

@@ -25,17 +25,17 @@ import mail from "../assets/images/contact/mail.png";
 const notFound =
   "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdG1kaXQxODI3YnVkaWIwcXJ6ZGYzNzM0azN0bXg4amZzMzliZ3ZpayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WQOIEQRgiK722l3PQT/giphy.gif";
 
-  // contacts urls
-  const githubUrl = "https://github.com/accdev1694?tab=repositories"
-  const linkedinUrl = "https://www.linkedin.com/in/ao111/"
-  const hashnodeUrl = "https://abojeonline.com/"
-  const mailUrl = "mailto:diloch111@gmail.com"
+// contacts urls
+const githubUrl = "https://github.com/accdev1694?tab=repositories";
+const linkedinUrl = "https://www.linkedin.com/in/ao111/";
+const hashnodeUrl = "https://abojeonline.com/";
+const mailUrl = "mailto:diloch111@gmail.com";
 
-  // projects Urls
-  const blogUrl = "https://abojeonline.com/"
-  const ecommerceUrl = null 
-  const landingPageUrl = "https://techpivotlandingpage.netlify.app/" 
-  const portfolioUrl = null
+// projects Urls
+const blogUrl = "https://abojeonline.com/";
+const ecommerceUrl = null;
+const landingPageUrl = "https://techpivotlandingpage.netlify.app/";
+const portfolioUrl = "https://olochesportfolio.netlify.app/";
 
 export const pageData = {
   home: {
@@ -46,7 +46,7 @@ export const pageData = {
     learnMore: ">>> Checkout My Skills",
     id: "home",
     imgs: [myPhoto],
-    alt: ["My Photo"]
+    alt: ["My Photo"],
   },
 
   skills: {
@@ -57,7 +57,7 @@ export const pageData = {
     learnMore: ">>> Checkout My Projects",
     id: "skills",
     imgs: [tailwindLogo, reactLogo, firebaseLogo, pythonLogo],
-    alt: ["Tailwind Css Logo", "React Logo", "Firebase Logo", "Python Logo"]
+    alt: ["Tailwind Css Logo", "React Logo", "Firebase Logo", "Python Logo"],
   },
 
   projects: {
@@ -69,7 +69,12 @@ export const pageData = {
     id: "projects",
     imgs: [blog, ecommerce, landingPage, portfolio],
     urls: [blogUrl, ecommerceUrl, landingPageUrl, portfolioUrl],
-    alt: ["My Blog Preview", "My Ecommerce Site Preview", "Tech Training Landing Page Preview", "My Portfolio Website Preview"]
+    alt: [
+      "My Blog Preview",
+      "My Ecommerce Site Preview",
+      "Tech Training Landing Page Preview",
+      "My Portfolio Website Preview",
+    ],
   },
   contacts: {
     heading: "Contact Me",
@@ -80,7 +85,7 @@ export const pageData = {
     id: "contacts",
     imgs: [github, hashnode, linkedin, mail],
     urls: [githubUrl, hashnodeUrl, linkedinUrl, mailUrl],
-    alt: ["GitHub Logo", "Hashnode Logo", "LinkedIn Logo", "Gmail Logo"]
+    alt: ["GitHub Logo", "Hashnode Logo", "LinkedIn Logo", "Gmail Logo"],
   },
 
   notFound: {
@@ -91,6 +96,6 @@ export const pageData = {
     learnMore: "<<< Return to Homepage",
     id: "not-found",
     imgs: [notFound],
-    alt: ["404 Page not Found"]
+    alt: ["404 Page not Found"],
   },
 };

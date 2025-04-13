@@ -20,3 +20,18 @@
     /* color: var(--text-muted); */
     line-height: 1.5em;
 }
+
+@media (max-width: 1261px) {
+    
+    h1.heading {
+      /* display: none; */
+      font-size: 2em;
+    }
+    h3.subheading {
+      font-size: 1em;
+    }
+    p.description {
+      font-size: 0.8em;
+    }
+    
+  }
