@@ -13,7 +13,7 @@ const ImageGallery = ({ pageTitle }) => {
       }
     >
       {pageDetails.imgs.map((img, index) =>
-        pageDetails.urls ? (
+        pageDetails.urls && pageDetails.urls !==null ? (
           <a href={pageDetails.urls[index]} key={index} target="_blank">
             <img
               src={img}

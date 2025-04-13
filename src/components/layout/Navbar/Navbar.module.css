@@ -1,11 +1,8 @@
-.navbar{
-    background-color: var(--secondary-color);
-    display: flex;
-    justify-content: space-between;
-    padding: var(--spacing-sm) 200px;
-    border-bottom: 1px solid var(--accent-color-faded);
-align-items: center;
+.navbar {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-sm) 200px;
+  border-bottom: 1px solid var(--accent-color-faded);
+  align-items: center;
 }
-
-
-

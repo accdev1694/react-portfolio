@@ -1,6 +1,5 @@
 
 import styles from "./Footer.module.css";
-import "../../styles/global.css";
 import FooterLinks from "../FooterLinks/FooterLinks";
 
 const Footer = () => {

@@ -1,0 +1,16 @@
+.actionButton {
+  font-size: 1.2em;
+  color: inherit;
+  font-weight: 900;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 5px;
+  padding: var(--spacing-lg) var(--spacing-xxxl);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.actionButton:hover {
+  /* box-shadow: 0 0 5px rgb(255, 255, 255); */
+  color: white;
+}

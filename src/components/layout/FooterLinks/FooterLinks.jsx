@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "../../styles/global.css";
 import styles from "./FooterLinks.module.css"
 import { pageData } from "../../pageData";
 

@@ -1,0 +1,9 @@
+.pageContainer {
+    height: calc(100vh - 80px);
+    margin: auto 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-xxxl);
+  }
+

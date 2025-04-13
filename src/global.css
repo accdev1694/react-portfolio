@@ -5,6 +5,7 @@
   --secondary-color: rgb(24, 42, 35);
   --accent-color: rgb(186, 62, 0);
   --accent-color-faded: rgba(255, 68, 0, 0.175);
+  --text-muted: rgb(92, 92, 92);
   --background-color-faded: rgba(136, 136, 136, 0.196);
   --spacing-xs: 4px;
   --spacing-sm: 7px;
@@ -69,14 +70,7 @@ span.color-change {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
-.page-container {
-  /* width: 100%; */
-  height: calc(100vh - 80px);
-  margin: auto 200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 
 

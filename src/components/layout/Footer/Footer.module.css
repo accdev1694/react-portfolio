@@ -1,10 +1,9 @@
-.footer{
-    display: flex;
-    background: var(--secondary-color);
-    padding: var(--spacing-md) 200px;
-    justify-content: space-between;
-align-items: center;
-border-top: 1px solid var(--accent-color-faded);
-font-size: 0.8em;
+.footer {
+  display: flex;
+  background: var(--secondary-color);
+  padding: var(--spacing-md) 200px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--accent-color-faded);
+  font-size: 0.8em;
 }
-

@@ -8,13 +8,14 @@ const ContentDescription = ({ pageTitle, nextPage }) => {
   return (
     <>
       <div className={styles.contentDescription}>
-        <h1>{pageDetails.heading}</h1>
-        <h3>{pageDetails.subHeading}</h3>
-        <p>{pageDetails.description}</p>
-        <ActionButton buttonContent={pageDetails.learnMore} nextPage={nextPage}/>
+        <h1 className={styles.heading}>{pageDetails.heading}</h1>
+        <h3 className={styles.subheading}>{pageDetails.subHeading}</h3>
+        <p className={styles.description}>{pageDetails.description}</p>
+        <ActionButton
+          buttonContent={pageDetails.learnMore}
+          nextPage={nextPage}
+        />
       </div>
-
-     
     </>
   );
 };

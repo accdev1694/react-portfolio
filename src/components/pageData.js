@@ -33,9 +33,9 @@ const notFound =
 
   // projects Urls
   const blogUrl = "https://abojeonline.com/"
-  const ecommerceUrl = "" 
-  const landingPageUrl = "" 
-  const portfolioUrl = ""
+  const ecommerceUrl = null 
+  const landingPageUrl = "https://techpivotlandingpage.netlify.app/" 
+  const portfolioUrl = null
 
 export const pageData = {
   home: {

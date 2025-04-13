@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/layout/Navbar/Navbar";
 import Footer from "./components/layout/Footer/Footer";
-import "./components/styles/global.css"
-import HomePage from "./components/pages/HomePage/HomePage";
-import ContactMe from "./components/pages/ContactMe/ContactMe";
-import MyProjects from "./components/pages/MyProjects/MyProjects";
-import MySkills from "./components/pages/MySkills/MySkills";
-import NotFound from "./components/pages/NotFound/NotFound";
+import HomePage from "./components/pages/HomePage";
+import ContactMe from "./components/pages/ContactMe";
+import MyProjects from "./components/pages/MyProjects";
+import MySkills from "./components/pages/MySkills";
+import NotFound from "./components/pages/NotFound";
+import "./global.css";
 const App = () => {
   return (
     <div className="app-container">
