@@ -1,5 +1,5 @@
 div img {
-  width: 130px;
+  width: 185px;
   padding: var(--spacing-lg);
   background-color: var(--color-bg-transparent);
   box-shadow: 0 0 10px black;
@@ -19,15 +19,27 @@ div img:hover {
   gap: 20px;
 }
 
+.imageTitle {
+  font-size: 0.7em;
+  color: var(--color-secondary);
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
 .imageGallery a {
   /* width: 150px; */
   width: fit-content;
   /* height: 150px; */
   height: fit-content;
+  text-decoration: none;
 }
 
 .image img {
   width: 400px;
   background: var(--color-bg-transparent);
   border-radius: 20px;
+}
+
+a img[alt="My Photo"] + * , a img[alt="404 Page not Found"] + * {
+  display: none;
 }

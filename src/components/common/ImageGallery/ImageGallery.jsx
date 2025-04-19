@@ -15,18 +15,30 @@ const ImageGallery = ({ pageTitle }) => {
       {pageDetails.imgs.map((img, index) =>
         pageDetails.urls && pageDetails.urls !==null ? (
           <a href={pageDetails.urls[index]} key={index} target="_blank">
+            <>
             <img
               src={img}
               alt={pageDetails.alt[index]}
               className={styles[pageTitle]}
+              title={pageDetails.alt[index]}
             />
+            <p className={styles.imageTitle}>{pageDetails.alt[index]}</p>
+            </>
+            
           </a>
         ) : (
-          <img
-            src={img}
-            alt={pageDetails.alt[index]}
-            className={styles[pageTitle]}
-          />
+          <a href='' key={index} target="_blank">
+            <>
+            <img
+              src={img}
+              alt={pageDetails.alt[index]}
+              className={styles[pageTitle]}
+              title={pageDetails.alt[index]}
+            />
+            <p className={styles.imageTitle}>{pageDetails.alt[index]}</p>
+            </>
+            
+          </a>
         )
       )}
     </div>

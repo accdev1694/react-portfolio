@@ -57,7 +57,7 @@ export const pageData = {
     learnMore: ">>> Checkout My Projects",
     id: "skills",
     imgs: [tailwindLogo, reactLogo, firebaseLogo, pythonLogo],
-    alt: ["Tailwind Css Logo", "React Logo", "Firebase Logo", "Python Logo"],
+    alt: ["Tailwind Css", "Modern React", "Firebase Database", "Python Programming"],
   },
 
   projects: {
@@ -70,10 +70,10 @@ export const pageData = {
     imgs: [blog, ecommerce, landingPage, portfolio],
     urls: [blogUrl, ecommerceUrl, landingPageUrl, portfolioUrl],
     alt: [
-      "My Blog Preview",
-      "My Ecommerce Site Preview",
-      "Tech Training Landing Page Preview",
-      "My Portfolio Website Preview",
+      "My Blog Website",
+      "My Ecommerce Website",
+      "Tech Training Landing Page",
+      "My Portfolio Website",
     ],
   },
   contacts: {
@@ -85,7 +85,7 @@ export const pageData = {
     id: "contacts",
     imgs: [github, hashnode, linkedin, mail],
     urls: [githubUrl, hashnodeUrl, linkedinUrl, mailUrl],
-    alt: ["GitHub Logo", "Hashnode Logo", "LinkedIn Logo", "Gmail Logo"],
+    alt: ["GitHub", "Hashnode", "LinkedIn", "Gmail"],
   },
 
   notFound: {
