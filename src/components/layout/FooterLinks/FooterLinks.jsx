@@ -6,13 +6,13 @@ const FooterLinks = ({pageTitle}) => {
     
     
     return ( <div className={styles.footerLinks}>        
-        {/* {sectionData[pageTitle].imgs.map((img, index)=>(
-            <a href={sectionData[pageTitle].urls?.[index] || "#"} key={index} >
-                <img src={img} alt="" className={styles[sectionData[pageTitle].id]}/>
+        {pageData[pageTitle].imgs.map((img, index)=>(
+            <a href={pageData[pageTitle].urls?.[index] || "#"} key={index} target="_blank">
+                <img src={img} alt="" className={styles[pageData[pageTitle].id]}/>
             </a>
         ))
         
-        } */}
+        }
       </div> );
 }
  
