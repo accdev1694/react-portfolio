@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className={`navbar ${styles.navbar}`}>
-      <Link to={"/"}>
-        ol<span className="color-change">o</span>che
+      <Link to={"/"} className={styles.logo}>
+        Portfoli<span className={styles.colorChange}>o</span>
       </Link>
       <div className="links">
         <Navlinks />

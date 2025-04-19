@@ -2,7 +2,7 @@
   font-size: 1.2em;
   color: inherit;
   font-weight: 900;
-  background-color: var(--accent-color);
+  background-color: var(--color-accent);
   border: none;
   border-radius: 5px;
   padding: var(--spacing-lg) var(--spacing-xxxl);
@@ -16,10 +16,8 @@
 }
 
 @media (max-width: 1261px) {
-   
-    button.actionButton{
-        font-size: 0.8em;
-  padding: var(--spacing-md) var(--spacing-xxxl);
-
-    }
+  button.actionButton {
+    font-size: 0.8em;
+    padding: var(--spacing-md) var(--spacing-xxxl);
   }
+}

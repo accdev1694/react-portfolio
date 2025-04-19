@@ -6,13 +6,13 @@ import ContactMe from "./components/pages/ContactMe";
 import MyProjects from "./components/pages/MyProjects";
 import MySkills from "./components/pages/MySkills";
 import NotFound from "./components/pages/NotFound";
-import "./global.css";
+import styles from "./App.module.css";
 const App = () => {
   return (
-    <div className="app-container">
+    <div className={styles.appContainer}>
       <Router>
         <Navbar />
-        <div className="main-content">
+        <div className={styles.mainContent}>
           <Routes>
             <Route path="/" element={<HomePage />}/>          
             <Route path="/contacts" element={<ContactMe />}/>

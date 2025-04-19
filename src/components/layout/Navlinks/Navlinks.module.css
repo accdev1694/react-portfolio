@@ -1,4 +1,5 @@
 .navlinks{
     display: flex;
     font-size: 0.8em;
+    gap: var(--spacing-xxl);
 }
