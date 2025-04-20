@@ -1,9 +1,14 @@
+div.image,
+div.imageGallery {
+  width: 50%;
+}
+
 div img {
   width: 185px;
   padding: var(--spacing-lg);
   background-color: var(--color-bg-transparent);
   box-shadow: 0 0 10px black;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   opacity: 0.6;
   transition: all ease-in-out 0.3s;
 }
@@ -37,9 +42,28 @@ div img:hover {
 .image img {
   width: 400px;
   background: var(--color-bg-transparent);
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
-a img[alt="My Photo"] + * , a img[alt="404 Page not Found"] + * {
+a img[alt="My Photo"] + *,
+a img[alt="404 Page not Found"] + * {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .image img {
+    width: 200px;
+  }
+  div img {
+    width: 90px;
+  }
+
+  .imageTitle {
+    font-size: 0.6em;
+    font-weight: 600;
+  }
+  .imageGallery {
+    gap: 10px;
+    grid-template-columns: repeat(2, 2fr);
+  }
 }

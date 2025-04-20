@@ -15,9 +15,10 @@
   color: white;
 }
 
-@media (max-width: 1261px) {
+@media (max-width: 768px) {
   button.actionButton {
-    font-size: 0.8em;
-    padding: var(--spacing-md) var(--spacing-xxxl);
+    font-size: 0.7em;
+    padding: var(--spacing-md) var(--spacing-xxl);
+    width: 100%;
   }
 }

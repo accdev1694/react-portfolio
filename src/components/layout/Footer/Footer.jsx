@@ -4,12 +4,12 @@ import FooterLinks from "../FooterLinks/FooterLinks";
 
 const Footer = () => {
   return (
-    <div className={styles.footer}>
+    <>
       <p>
-        &copy; {new Date().getFullYear()} Oloche Aboje. All rights reserved.
+        &copy; {new Date().getFullYear()} All rights reserved.
       </p>
       <FooterLinks pageTitle="contacts"/>
-    </div>
+    </>
   );
 };
 

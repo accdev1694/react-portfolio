@@ -57,7 +57,7 @@ export const pageData = {
     learnMore: ">>> Checkout My Projects",
     id: "skills",
     imgs: [tailwindLogo, reactLogo, firebaseLogo, pythonLogo],
-    alt: ["Tailwind Css", "Modern React", "Firebase Database", "Python Programming"],
+    alt: ["Tailwind", "React", "Firebase", "Python"],
   },
 
   projects: {
@@ -70,10 +70,10 @@ export const pageData = {
     imgs: [blog, ecommerce, landingPage, portfolio],
     urls: [blogUrl, ecommerceUrl, landingPageUrl, portfolioUrl],
     alt: [
-      "My Blog Website",
-      "My Ecommerce Website",
-      "Tech Training Landing Page",
-      "My Portfolio Website",
+      "Blog",
+      "Ecommerce",
+      "Training",
+      "Portfolio",
     ],
   },
   contacts: {

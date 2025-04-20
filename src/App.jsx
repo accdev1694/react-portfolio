@@ -8,20 +8,26 @@ import MySkills from "./components/pages/MySkills";
 import NotFound from "./components/pages/NotFound";
 import styles from "./App.module.css";
 const App = () => {
+  console.log(styles);
+  
   return (
-    <div className={styles.appContainer}>
+    <div className={styles.app}>
       <Router>
-        <Navbar />
-        <div className={styles.mainContent}>
+        <nav className={styles.header}>
+          <Navbar />
+        </nav>
+        <main className={styles.main}>
           <Routes>
-            <Route path="/" element={<HomePage />}/>          
-            <Route path="/contacts" element={<ContactMe />}/>
-            <Route path="/projects" element={<MyProjects />}/>
-            <Route path="/skills" element={<MySkills />}/>
-            <Route path="*" element={<NotFound />}/>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/contacts" element={<ContactMe />} />
+            <Route path="/projects" element={<MyProjects />} />
+            <Route path="/skills" element={<MySkills />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
-        </div>
-        <Footer />
+        </main>
+        <footer className={styles.footer}>
+          <Footer />
+        </footer>
       </Router>
     </div>
   );

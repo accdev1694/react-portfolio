@@ -4,14 +4,15 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className={`navbar ${styles.navbar}`}>
+    <>
       <Link to={"/"} className={styles.logo}>
         Portfoli<span className={styles.colorChange}>o</span>
       </Link>
       <div className="links">
+        <button className="burgerMenu">code here</button>
         <Navlinks />
       </div>
-    </div>
+    </>
   );
 };
 

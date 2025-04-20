@@ -6,17 +6,12 @@ const ContentDescription = ({ pageTitle, nextPage }) => {
   const pageDetails = pageData[pageTitle];
 
   return (
-    <>
-      <div className={styles.contentDescription}>
-        <h3 className={styles.subheading}>{pageDetails.subHeading}</h3>
-        <h1 className={styles.heading}>{pageDetails.heading}</h1>
-        <p className={styles.description}>{pageDetails.description}</p>
-        <ActionButton
-          buttonContent={pageDetails.learnMore}
-          nextPage={nextPage}
-        />
-      </div>
-    </>
+    <div className={styles.contentDescription}>
+      <h1 className={styles.heading}>{pageDetails.heading}</h1>
+      <h3 className={styles.subheading}>{pageDetails.subHeading}</h3>
+      <p className={styles.description}>{pageDetails.description}</p>
+      <ActionButton buttonContent={pageDetails.learnMore} nextPage={nextPage} />
+    </div>
   );
 };
 

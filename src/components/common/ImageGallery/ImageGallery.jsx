@@ -27,7 +27,7 @@ const ImageGallery = ({ pageTitle }) => {
             
           </a>
         ) : (
-          <a href='' key={index} target="_blank">
+          <a href={null} key={index} target="_blank">
             <>
             <img
               src={img}

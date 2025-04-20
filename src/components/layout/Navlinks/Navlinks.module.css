@@ -3,3 +3,17 @@
     font-size: 0.8em;
     gap: var(--spacing-xxl);
 }
+
+@media (max-width: 768px) {
+    .navlinks {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        font-size: 0.6em;
+        position: absolute;
+        right: 10%;
+        top: 32px;
+        background-color: var(--color-bg-transparent);
+        padding: var(--spacing-xs);
+        border: 1px solid rgba(75, 75, 75, 0.387);
+    }
+}

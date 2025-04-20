@@ -1,7 +1,39 @@
 .contacts {
-    width: 25px;
-    margin-left: var(--spacing-lg);
-    padding: var(--spacing-xs);
-    background: rgba(255, 255, 255, 0.091);
-    border-radius: 5px;
+  width: 25px;
+  padding: var(--spacing-xs);
+  background: rgba(255, 255, 255, 0.091);
+  border-radius: 5px;
+}
+
+.footerLinks {
+  display: flex;
+
+  gap: var(--spacing-md);
+}
+
+@media (max-width: 575px) {
+  
+}
+
+
+/* Extra Small (XS) – ≤ 575px */
+@media (max-width: 575px) {
+  .footerLinks {
+    gap: var(--spacing-md);
   }
+  .contacts{
+    width: 20px;
+  }
+ }
+
+/* Small (SM) – 576px to 767px */
+@media (min-width: 576px) and (max-width: 767px) { }
+
+/* Medium (MD) – 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) { }
+
+/* Large (LG) – 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) { }
+
+/* Extra Large (XL) – ≥ 1200px */
+@media (min-width: 1200px) { }

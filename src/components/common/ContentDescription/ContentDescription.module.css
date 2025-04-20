@@ -4,6 +4,7 @@
   align-items: start;
   justify-content: center;
   gap: var(--spacing-xxl);
+  width: 50%;
 }
 
 .heading {
@@ -23,13 +24,19 @@
   font-weight: 100;
 }
 
-@media (max-width: 1261px) {
-  h1.heading {
-    /* display: none; */
-    font-size: 3em;
+@media (max-width: 768px) {
+  .contentDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xxl);
   }
+  h1.heading {
+    font-size: 1.6em;
+    }
   h3.subheading {
-    font-size: 1.5em;
+    font-size: 0.6em;
   }
   p.description {
     font-size: 0.8em;
