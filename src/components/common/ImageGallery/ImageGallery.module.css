@@ -1,16 +1,19 @@
 div.image,
 div.imageGallery {
-  width: 50%;
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--spacing-lg);
 }
 
 div img {
-  width: 185px;
-  padding: var(--spacing-lg);
-  background-color: var(--color-bg-transparent);
+  width: 140px;
   box-shadow: 0 0 10px black;
-  /* border-radius: 10px; */
+  border-radius: 10px;
   opacity: 0.6;
   transition: all ease-in-out 0.3s;
+  padding: var(--spacing-lg);
 }
 
 div img:hover {
@@ -18,11 +21,7 @@ div img:hover {
   padding: var(--spacing-sm);
 }
 
-.imageGallery {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  gap: 20px;
-}
+
 
 .imageTitle {
   font-size: 0.7em;
@@ -32,38 +31,69 @@ div img:hover {
 }
 
 .imageGallery a {
-  /* width: 150px; */
   width: fit-content;
-  /* height: 150px; */
   height: fit-content;
   text-decoration: none;
 }
 
 .image img {
-  width: 400px;
+  width: 350px;
   background: var(--color-bg-transparent);
   /* border-radius: 20px; */
 }
+
 
 a img[alt="My Photo"] + *,
 a img[alt="404 Page not Found"] + * {
   display: none;
 }
 
-@media (max-width: 768px) {
+
+
+
+
+
+
+
+@media (max-width: 769px) {
   .image img {
-    width: 200px;
+    width: 220px;
   }
-  div img {
-    width: 90px;
+
+  .imageGallery img{
+    width: 100px;
+  }
+}
+
+@media (max-width: 426px) {
+  div.image,
+div.imageGallery {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+div .image{
+  justify-content: center;
+  
+}
+  .image img {
+    width: 160px;
+  }
+  .imageGallery img {
+    width: 70px;
   }
 
   .imageTitle {
     font-size: 0.6em;
     font-weight: 600;
   }
-  .imageGallery {
-    gap: 10px;
-    grid-template-columns: repeat(2, 2fr);
+  
+}
+
+
+@media (max-width: 376px) {
+  .imageGallery img {
+    width: 50px;
   }
 }

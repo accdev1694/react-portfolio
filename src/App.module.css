@@ -5,14 +5,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
-  /* overflow: hidden; */
+  background: linear-gradient(var(--color-bg), black, var(--color-bg));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .app {
@@ -23,46 +26,43 @@ body {
   width: 100vw;
   font-family: Ubuntu, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: linear-gradient(var(--color-bg), black, var(--color-bg));
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  
   color: var(--color-primary);
+  padding: 5px 10%;
 }
 
 
 /* Header Component */
-nav.header {
+.header {
   display: flex;
   justify-content: space-between;
-  padding: 50px 10% 0 10%;
+  padding-top: 50px;
   align-items: center;
 }
 /* Main Component */
-main.main {
+.main {
   height: 100%;
-  margin: 0 10%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 50px;
+  width: 100%;
 }
 /* Footer component */
 .footer {
   display: flex;
-  padding: var(--spacing-xs) 10%;
   gap: var(--spacing-lg);
   justify-content: space-between;
   align-items: center;
-  font-size: 0.8em;
+  font-size: 0.6em;
   width: 100%;
 }
 
 /* Media querries */
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .main {
     flex-direction: column;
     justify-content: center;
-    margin: 0 10%;
     gap: 20px;
     text-align: center;
   }
@@ -72,3 +72,5 @@ main.main {
     padding-bottom: 5px;
   }
 }
+
+
